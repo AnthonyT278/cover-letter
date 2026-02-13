@@ -1,206 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Engineer Cover Letter - Thabo Rmamthebane</title>
-  <style>
-    @media print {
-      body { font-size: 11pt; line-height: 1.5; }
-      a { text-decoration: none; color: #333; }
-    }
-    
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 40px auto;
-      max-width: 22cm;
-      color: #333;
-      line-height: 1.6;
-      background: white;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <style>
+        /* --- CSS STYLES --- */
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap');
 
-    .letter {
-      padding-bottom: 40px;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .sender {
-      margin-bottom: 20px;
-      font-size: 10pt;
-      color: #555;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 12px;
-    }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            background-color: #ffdee9;
+            background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: #333;
+        }
 
-    .sender address {
-      margin: 0;
-      font-style: normal;
-    }
+        /* Floating Hearts Animation */
+        .heart-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
 
-    .date {
-      font-weight: 600;
-      color: #2c3e50;
-    }
+        .heart {
+            position: absolute;
+            bottom: -100px;
+            color: #ff4757;
+            font-size: 24px;
+            animation: floatUp linear infinite;
+            opacity: 0.6;
+        }
 
-    .recipient {
-      margin-bottom: 30px;
-    }
+        @keyframes floatUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            20% { opacity: 0.8; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
 
-    .recipient strong {
-      font-weight: 600;
-    }
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
 
-    .salutation {
-      margin: 0 0 20px;
-      font-size: 11pt;
-    }
+        nav .logo {
+            font-family: 'Pacifico', cursive;
+            font-size: 2rem;
+            color: #ff4757;
+        }
 
-    .body {
-      font-size: 11pt;
-      text-align: justify;
-      margin-bottom: 30px;
-    }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
 
-    .body p {
-      margin-bottom: 16px;
-    }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
 
-    .signature {
-      margin-top: 30px;
-    }
+        nav ul li a:hover {
+            color: #ff4757;
+        }
 
-    .signature .name {
-      font-weight: 700;
-      font-size: 13pt;
-      color: #1a2a40;
-    }
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 90vh;
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
 
-    .contact-links {
-      margin-top: 8px;
-      font-size: 9pt;
-      color: #555;
-    }
+        .hero-content h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 5rem;
+            color: #ff4757;
+            margin-bottom: 20px;
+            animation: popIn 1s ease-out;
+        }
 
-    .contact-links a {
-      color: #0066cc;
-      text-decoration: none;
-    }
+        .hero-content p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: #555;
+        }
 
-    /* Highlighted strengths (subtle underline, italic, bold) */
-    .highlight {
-      font-weight: 600;
-      color: #1a2a40;
-    }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #ff4757;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
+            cursor: pointer;
+            border: none;
+        }
 
-    .tech {
-      font-family: 'Consolas', 'Monaco', monospace;
-      font-weight: 600;
-      color: #2c3e50;
-    }
+        .btn:hover {
+            background-color: #ff6b81;
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 71, 87, 0.6);
+        }
 
-    
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            80% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
 
-    /* Responsive tweaks */
-    @media (max-width: 600px) {
-      body { margin: 20px 15px; font-size: 10pt; }
-      .sender, .recipient { font-size: 9pt; }
-    }
-  </style>
+        /* reasons section */
+        .reasons {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            z-index: 1;
+        }
+
+        .reasons h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            color: #ff4757;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            width: 300px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #ff6b81;
+        }
+
+        /* Interactive Moment */
+        .surprise-section {
+            padding: 100px 20px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .surprise-box {
+            background: #fff;
+            padding: 60px;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 0 auto;
+            border: 2px dashed #ff4757;
+        }
+
+        #surpriseText {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heart-emoji {
+            font-size: 5rem;
+            animation: heartbeat 1.5s infinite;
+            display: none; /* Hidden initially */
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 80px 20px;
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background-color: #ff4757;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 3rem; }
+            nav { flex-direction: column; padding: 20px; }
+            nav ul { margin-top: 20px; }
+            nav ul li { margin: 0 10px; }
+        }
+    </style>
 </head>
 <body>
 
-<div class="letter">
-  <div class="sender">
-    <address>
-      <strong>Thabo Ramathebane</strong><br>
-      Johannesbrug | 2000<br>
-      <a href="mailto:[your.email@example.com]">tmoropodi1@gmail.com</a> | 
-      <a href="tel:[your-phone]">+27 63 821 7469</a><br>
-      <a href="https://heartfelt-lamington-d6e4ea.netlify.app/" target="_blank">Personal Site</a> • 
-      <a href="https://github.com/AnthonyT278" target="_blank">GitHub</a>
-    </address>
-    <div class="date">[Date]</div>
-  </div>
+    <!-- Floating Hearts Background -->
+    <div class="heart-bg" id="heartBg"></div>
 
-  <div class="recipient">
-    <strong>Hiring Team</strong><br>
-    FNB
-  </div>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Be My Valentine?</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#reasons">Why You?</a></li>
+            <li><a href="#surprise">Surprise</a></li>
+            <li><a href="#gallery">Memories</a></li>
+        </ul>
+    </nav>
 
-  <div class="salutation">Dear Hiring Team,</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Happy Valentine's Day!</h1>
+            <p>I wanted to create something special to show you how much you mean to me. Every heart you see floating is a reason why I love you.</p>
+            <a href="#surprise" class="btn">Open My Heart</a>
+        </div>
+    </section>
 
-  <div class="body">
-    <p>
-      I am applying for the AI Engineer role on the iDNA Team. I have experience with building and deploying AI-powered solutions,
-      including full-stack integration of conversational AI agents and I am confident I can contribute effectively to the team. I consider myself a builder,
-      I thrive on designing, and operationalizing AI models as human-centered tools. My recent work includes:
-    </p>
+    <!-- Reasons Section -->
+    <section id="reasons" class="reasons">
+        <h2>3 Reasons Why I Love You</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>😊 Your Smile</h3>
+                <p>You light up the room just by walking in. Your smile is my favorite sight in the whole world.</p>
+            </div>
+            <div class="card">
+                <h3>💖 Your Kindness</h3>
+                <p>The way you care for others inspires me to be a better person every single day.</p>
+            </div>
+            <div class="card">
+                <h3>✨ You Are You</h3>
+                <p>There is no one else in the world like you. I love all our quirks and adventures.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Surprise Section -->
+    <section id="surprise" class="surprise-section">
+        <div class="surprise-box">
+            <h2 style="margin-bottom: 20px; color: #ff4757;">I made this just for you...</h2>
+            <div id="surpriseText">
+                <p>Click the button below to see what I wanted to say to you.</p>
+                <div style="margin-top: 20px;">
+                    <button id="surpriseBtn" class="btn">Click for a Surprise ❤️</button>
+                </div>
+            </div>
+            <div class="heart-emoji" id="heartDisplay">❤️❤️❤️</div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2 style="font-family: 'Pacifico', cursive; font-size: 3rem; margin-bottom: 50px; color: #ff4757;">Us</h2>
+        <div class="gallery-grid">
+            <!-- You can replace these URLs with your own photos -->
+            <div class="gallery-item">
+                <img src="queen-1.jpg" alt="Couple">
+            </div>
+            <div class="gallery-item">
+                <img src="queen-2.jpg" alt="Love">
+            </div>
+            <div class="gallery-item">
+                <img src="queen-3.jpg" alt="Romantic">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ and code just for you. I love you!</p>
+    </footer>
+
+    <script>
+        /* --- JAVASCRIPT LOGIC --- */
+
+        // 1. Floating Hearts Background Animation
+        const heartBg = document.getElementById('heartBg');
+        
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '❤️';
+            heart.classList.add('heart');
+            
+            // Randomize position and animation speed
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 5 + 's'; // 5-8 seconds
+            heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+            heart.style.animationDelay = Math.random() * 5 + 's';
+            
+            heartBg.appendChild(heart);
+
+            // Remove heart from DOM after animation completes to keep browser fast
+            setTimeout(() => {
+                heart.remove();
+            }, 8000);
+        }
+
+        // Create a new heart every 300ms
+        setInterval(createHeart, 300);
 
 
-    <ul>
-      <li>
-        <strong>End-to-end development of intelligent conversational agents</strong> (<span class="tech">Python</span>, <span class="tech">PyTorch</span>, <span class="tech">LangChain</span>) 
-      </li>
+        // 2. Interactive Surprise Logic
+        const surpriseBtn = document.getElementById('surpriseBtn');
+        const surpriseText = document.getElementById('surpriseText');
+        const heartDisplay = document.getElementById('heartDisplay');
 
-      <li>
-        <strong>Building scalable,</strong> production-grade pipelines
-      </li>
+        surpriseBtn.addEventListener('click', () => {
+            // Hide the button
+            surpriseBtn.style.display = 'none';
+            
+            // Show the message with a typing effect
+            const messages = [
+                "I love you more than coffee!",
+                "You make me the happiest person alive.",
+                "I'm so grateful to have you in my life.",
+                "Happy Valentine's Day, my love!"
+            ];
 
-      <li>
-        <strong>Integrating AI</strong> agents with enterprise ecosystems
-      </li>
+            let currentMsgIndex = 0;
+            
+            // Simple typing effect loop
+            let charIndex = 0;
+            let currentMessage = messages[currentMsgIndex];
+            
+            // Reset display
+            heartDisplay.style.display = 'none';
+            surpriseText.innerHTML = "";
+            
+            const typingInterval = setInterval(() => {
+                if (charIndex < currentMessage.length) {
+                    surpriseText.innerHTML += currentMessage.charAt(charIndex);
+                    charIndex++;
+                } else {
+                    clearInterval(typingInterval);
+                    
+                    // After typing finishes, show the big hearts
+                    setTimeout(() => {
+                        heartDisplay.style.display = 'block';
+                        
+                        // Change message after a few seconds
+                        setTimeout(() => {
+                            currentMessage = "Be Mine? ❤️";
+                            charIndex = 0;
+                            surpriseText.innerHTML = "";
+                            const typingInterval2 = setInterval(() => {
+                                if (charIndex < currentMessage.length) {
+                                    surpriseText.innerHTML += currentMessage.charAt(charIndex);
+                                    charIndex++;
+                                } else {
+                                    clearInterval(typingInterval2);
+                                }
+                            }, 100);
+                        }, 2000);
+                    }, 500);
+                }
+            }, 50); // Speed of typing (ms)
+        });
 
-      
-    </ul>
-
-    <p>
-       I have been passionate about AI, I want to bring my skills in <span class="highlight">AI engineering,</span> full-stack integration, and to collaborate with your team to gain AI industry experience at iDNA.
-    </p>
-
-    <!-- <p>
-       <strong>AI Certifications</strong>
-       <ul class="demo">
-        <li>
-            <a href="">AI Vector Search Prof</a>
-        </li>
-        <li>
-            <a href="">AI Vector Search Prof</a>
-        </li>
-       </ul>
-    </p> -->
-
-  </div>
-
-  <div class="body">
-    <p>
-      <!-- Thank you for considering my application. I welcome the opportunity to discuss how I can help shape the next generation of intelligent, human-centric solutions—and, more importantly, how I can grow alongside your team’s vision. -->
-       Thank you for considering my application, and would welcome the opportunity to discuss how I can grow alongside your team’s vision
-    </p>
-  </div>
-
-  <div class="signature">
-    <div>Warm regards,</div>
-    <div class="name">Thabo Ramathebane</div>
-    <div class="contact-links">
-      <a href="mailto:[your.email@example.com]">tmoropodi1@gmail.com</a> • 
-      <a href="tel:[your-phone]">+27 63 821 7469</a> • 
-      <a href="https://heartfelt-lamington-d6e4ea.netlify.app/" target="_blank">Personal Site</a> • 
-      <a href="https://github.com/AnthonyT278" target="_blank">github.com</a>
-    </div>
-  </div>
-</div>
-
-<script>
-  // Optional: Auto-fill current date on page load (if opened in browser)
-  document.addEventListener('DOMContentLoaded', () => {
-    const dateEl = document.querySelector('.date');
-    if (dateEl && dateEl.textContent.includes('[Date]')) {
-      const today = new Date().toLocaleDateString('en-US', { 
-        year: 'numeric', month: 'long', day: 'numeric' 
-      });
-      dateEl.textContent = today;
-    }
-  });
-</script>
-
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
